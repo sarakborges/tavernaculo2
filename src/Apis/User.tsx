@@ -1,15 +1,13 @@
 import { IUser } from "Interfaces/User";
 
-const getLogin = async (email: string, pass: string) => {
-  const userInfo: IUser = {
-    id: "1",
-    email: "sarakborges@outlook.com",
-    password: "1234",
-    name: "Sara",
-    avatar: `https://image.yoble.us/avatar/uma-bandeira-de-piratas5f85e540f1e3c.png`,
-  };
+import MUsers from "./Mocks/Users";
 
-  return email === userInfo.email && pass === userInfo.password
+const getLogin = async (email: string, pass: string) => {
+  const userInfo: IUser = MUsers.find(
+    (user) => user.email === email && user.password === pass
+  )!;
+
+  return !!userInfo
     ? {
         user: userInfo,
         token: 1,

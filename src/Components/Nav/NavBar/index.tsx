@@ -1,7 +1,7 @@
 // Dependencies
 import React, { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faSearch, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faSearch } from "@fortawesome/free-solid-svg-icons";
 
 // Contexts
 import { AppContext } from "Contexts/App";
