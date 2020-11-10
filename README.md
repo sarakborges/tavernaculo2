@@ -1,4 +1,5 @@
 **DISCLAIMER**
+
 Olá, amores. Esse projetinho é, ao mesmo tempo, uma ideia de sistema, e também tipo um boilerplate pros meus futuros projetos.
 
 **POR QUES**
